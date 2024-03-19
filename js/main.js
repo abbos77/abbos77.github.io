@@ -676,3 +676,13 @@ var animateReveal = function() {
 
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the unclickable link element
+    var unclickableLink = document.getElementById("unclickable");
+    
+    // Prevent the default action when the link is clicked
+    unclickableLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default action
+    });
+});
+
