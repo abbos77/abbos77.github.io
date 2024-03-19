@@ -2096,6 +2096,7 @@ span.error {
   margin-bottom: 10px;
 }
 #unclickable {
+  
   text-decoration: none;
   color: inherit;
   cursor: default; /* Prevent cursor change */

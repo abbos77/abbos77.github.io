@@ -676,7 +676,7 @@ var animateReveal = function() {
 
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     // Get the unclickable link element
     var unclickableLink = document.getElementById("unclickable");
     
@@ -684,5 +684,13 @@ document.addEventListener("DOMContentLoaded", function() {
     unclickableLink.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent the default action
     });
-});
+});*/
+
+const clickzone = document.querySelector('#unclickable');
+
+clickzone.addEventListener("click", clickzoneClick, false);
+
+function clickzoneClick(event){
+	event.preventDefault();
+}
 
